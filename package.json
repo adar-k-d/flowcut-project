@@ -1,0 +1,20 @@
+{
+  "name": "project-flowcut",
+  "version": "0.0.3",
+  "description": "A minimal Electron example of transparency",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [
+    "Electron",
+    "transparent",
+    "tutorial",
+    "transparency"
+  ],
+  "author": "KD",
+  "license": "GPLv3",
+  "devDependencies": {
+    "electron": "^4.0.5"
+  }
+}

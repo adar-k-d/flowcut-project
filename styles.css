@@ -1,0 +1,41 @@
+.taskbar-btn{
+    background-color: #333;
+    color:white;
+    padding:10px;
+    border-radius: 10px;
+    height: 40px;
+    display: block;
+    align-items: center;
+    overflow: hidden;
+  } 
+.taskbar-btn:active{
+    background-color: #7a7a7a;
+    transform: scale(0.75);
+}
+
+.hidden {
+    display: none;
+  }
+  
+  /* Context menu styles */
+  #contextMenu {
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 5px 0;
+  }
+  
+  #contextMenu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #contextMenu ul li {
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  
+  #contextMenu ul li:hover {
+    background-color: #f0f0f0;
+  }
