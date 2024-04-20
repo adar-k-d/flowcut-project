@@ -4,18 +4,13 @@ FlowCut is an application which groups together the shortcuts in your desktop un
 ## STAGE 1 : PRELIMINARY
 * Create a window with a transparent background, and make it non scalable. 
 * Add a button to it, with appropriate padding. On click, print “Hello World” in the center of the window.
-* 
-**NOTES** : It is fine to have the title bar be visible, the current objective is to make the background transparent only.
-  
-### RESULT:
-A transparent window has been successfully printed. A basic button has been added, which when clicked opens a message box with the message "Hello World!" in it. This is the most basic functioning of cour project.  
 
-### KNOWLEDGE OBTAINED:
-* Familiariased with basic tkinter commands
-* Discovered that the desktop right click function works through the window
 
-### SCREENSHOTS:
-
-![Image 1](readmeimg/STG1(3).png)
-![Image 1](readmeimg/STG1(2).png)
-![Image 1](readmeimg/STG1(1).png)
+## STAGE 2 : BASIC FUNCTIONALITY
+* Find out all the shortcuts in the desktop, and store their paths in a text file. Each filetype has its own text file.
+* UI with a movable button, with a grid menu that is positioned relative to the button's position.
+* When program is ran, hide the icons in the desktop.
+### Current Limitations:
+* The desktop context menu is inacessible due to electron occupying the whole screen.
+* The buttons are complely static, ie, no dynamic groups
+* The button can be dragged, but it has a delay as it follows the cursor
