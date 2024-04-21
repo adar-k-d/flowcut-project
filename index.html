@@ -1,25 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Electron Widget</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flowcut</title>
+    <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
-  <div class="taskbar">
-    <button class="taskbar-btn" id="button1">1</button>
-    <button class="taskbar-btn" id="button2">2</button>
-    <button class="taskbar-btn" id="button3">3</button>
-    <button class="taskbar-btn" id="button4">4</button>
-  </div>
-  <div id="contextmenu" class="Hidden">
-    <ul>
-      <li>Steam</li>
-      <li>Blender</li>
-      <li>Afterburner</li>
-    </ul>
-  </div>
-  <script src="script.js"></script>
+    <button class="button">•</button>
+    <div class="menu-slide">
+      <div class="menu">
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button>10</button>
+        <button>11</button>
+        <button>12</button>
+      </div>  
+    </div>
+
+    <script src="script.js"></script>
+    <!--<script src="script1.js"></script>-->
+    <script>
+      const { ipcRenderer } = require('electron');
+
+      document.addEventListener('DOMContentLoaded', () => {
+          ipcRenderer.send('hide-desktop-icons');
+      });
+    </script>
 </body>
 </html>
