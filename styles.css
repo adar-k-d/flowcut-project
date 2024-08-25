@@ -1,0 +1,101 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgba(0, 0, 0, 0);
+  margin: 0;
+  padding: 0;
+}
+
+.button {
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin: 10px 0;
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  position: absolute;
+  left: 5px;
+  z-index: 1;
+}
+
+.button:active {
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+}
+
+/* Adjust each button's position */
+.button:nth-of-type(1) { top: 5px; }
+.button:nth-of-type(2) { top: 65px; }
+.button:nth-of-type(3) { top: 125px; }
+.button:nth-of-type(4) { top: 185px; }
+.button:nth-of-type(5) { top: 245px; }
+.button:nth-of-type(6) { top: 305px; }
+.button:nth-of-type(7) { top: 365px; }
+
+.slideshow-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  justify-items: center;
+  align-items: center;
+}
+
+.slide {
+  display: none; /* Hide slides initially */
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  padding: 20px;
+  align-items: center; /* Centers buttons vertically */
+  justify-items: center; /* Centers buttons horizontally */
+}
+
+.slide.active {
+  display: grid; /* Show only the active slide */
+}
+
+button, .menu-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  background: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #999999;
+}
+
+button:hover, .menu-button:hover {
+  background-color: #999999; /* Darker shade on hover */
+  transform: scale(1.1); /* Slightly enlarge button on hover */
+}
+
+.menu-button img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.popup {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+  position: absolute;
+  width: 180px;
+  background: #404040;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  z-index: 1000;
+  padding: 10px;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+.popup.visible {
+  visibility: visible;
+  opacity: 1;
+}
