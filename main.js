@@ -24,7 +24,7 @@ function createWindow() {
     });
 
     mainWindow.loadFile('index.html');
-    mainWindow.webContents.openDevTools(); // DEV TOOLS REMOVE BEFORE EXECUTION
+    //mainWindow.webContents.openDevTools(); // DEV TOOLS REMOVE BEFORE EXECUTION
 
     mainWindow.setPosition(0, 0);
 
